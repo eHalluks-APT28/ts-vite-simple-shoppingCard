@@ -1,6 +1,6 @@
 import {Props} from "../../../Global/Global.d.tsx";
 
-const CartSummary = ({products}: Props) => {
+const CardSummary = ({products}: Props) => {
 
     const totalPrice: number = products.reduce((acc, product) => acc + product.quantity * product.price, 0)
     const totalQuantity = products.reduce((acc, product) => acc + product.quantity, 0)
@@ -19,4 +19,4 @@ const CartSummary = ({products}: Props) => {
     )
 }
 
-export {CartSummary}
+export {CardSummary}

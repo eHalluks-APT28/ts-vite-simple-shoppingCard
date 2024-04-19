@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {Cart} from "./components/Cart/Cart.tsx";
+import {Card} from "./components/Card/Card.tsx";
 
 window.myClock = () => {
     const formatTimeUnit = (unit: number) => {
@@ -26,6 +26,6 @@ window.onload = () => {
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <div id="clock"></div>
-        <Cart/>
+        <Card/>
     </React.StrictMode>,
 )

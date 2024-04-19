@@ -1,6 +1,6 @@
 import {PropsProduct} from "../../../Global/Global.d.tsx";
 
-const CartSingleElement = ({product}: PropsProduct) => {
+const CardSingleElement = ({product}: PropsProduct) => {
 
     const checkout: number = product.quantity * product.price
     const currency: string = "PLN"
@@ -16,4 +16,4 @@ const CartSingleElement = ({product}: PropsProduct) => {
     )
 }
 
-export {CartSingleElement}
+export {CardSingleElement}

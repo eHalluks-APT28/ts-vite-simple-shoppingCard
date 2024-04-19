@@ -1,4 +1,4 @@
-const CartHeader = () => {
+const CardHeader = () => {
     return(
         <thead>
             <tr>
@@ -11,4 +11,4 @@ const CartHeader = () => {
     )
 }
 
-export { CartHeader }
+export { CardHeader }

@@ -1,10 +1,10 @@
 import React from "react";
-import {CartHeader} from "./CartHeader/CartHeader.tsx";
-import {CartSummary} from "./CartSummary/CartSummary.tsx";
-import {CartElements} from "./CartElements/CartElements.tsx";
+import {CardHeader} from "./CardHeader/CardHeader.tsx";
+import {CardSummary} from "./CardSummary/CardSummary.tsx";
+import {CardElements} from "./CardElements/CardElements.tsx";
 import {Product} from "../../Global/Global.d.tsx";
 import { v4 as uuidv4 } from 'uuid';
-import './Cart.scss'
+import './Card.scss'
 
 const products: Product[] = [
     {
@@ -21,16 +21,16 @@ const products: Product[] = [
     }
 ];
 
-const Cart = () => {
+const Card = () => {
     return(
         <div>
             <table>
-                <CartHeader/>
-                <CartElements products={products}/>
-                <CartSummary products={products}/>
+                <CardHeader/>
+                <CardElements products={products}/>
+                <CardSummary products={products}/>
             </table>
         </div>
     )
 }
 
-export {Cart}
+export {Card}
