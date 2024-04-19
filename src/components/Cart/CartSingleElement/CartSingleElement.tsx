@@ -1,7 +1,5 @@
 import {PropsProduct} from "../../../Global/Global.d.tsx";
 
-
-
 const CartSingleElement = ({product}: PropsProduct) => {
 
     const checkout: number = product.quantity * product.price
